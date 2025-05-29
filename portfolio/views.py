@@ -7,4 +7,4 @@ def home(request):
 
 
 def home_view(request):
-    return render(request, 'home.html')
+    return render(request, 'portfolio/home.html')
