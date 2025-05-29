@@ -1,0 +1,18 @@
+{% extends 'portfolio/base.html' %}
+{% load widget_tweaks %}
+{% block title %}Quiz Results{% endblock %}
+{% block content %}
+
+<div class="card text-center shadow">
+  <div class="card-header bg-dark text-white">
+    <h4>Quiz Completed!</h4>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Your Score: <strong>{{ score }}</strong> out of <strong>{{ total }}</strong></h5>
+    <p class="card-text">Great job! 🎉</p>
+    <a href="{% url 'quiz:quiz_home' %}" class="btn btn-primary">Take Again</a>
+    <a href="/" class="btn btn-secondary">Back to Home</a>
+  </div>
+</div>
+
+{% endblock %}
